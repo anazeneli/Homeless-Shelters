@@ -6,25 +6,23 @@
   </head>
   <body>
     <form id="hs-form">
-      <label for="rhyme">Select a borough</label>
-      <select id="borough-options">
+      <label for="select">Select a borough</label>
+      <select onchange="showOptions(this)" id="borough-options">
+
+        <!-- empty label -->
         <option label=" "></option>
-
-        <!-- <option value="Lentil">Lentil</option>
-        <option value="Cardboard box">Cardboard box</option>
-        <option value="Petal">Petal</option>
-        <option value="Fettle">Fettle</option> -->
-
-
-
+        <!-- valid labels -->
+        <option value="Bronx">Bronx</option>
+        <option value="Brooklyn">Brooklyn</option>
+        <option value="Manhattan">Manhattan</option>
+        <option value="Queens">Queens</option>
+        <option value="Staten Island">Staten Island</option>
 
 
       </select>
       <input type="submit" value="submit">
     </form>
-    <div id="answer">
-
-    </div>
+    <div id="answer"></div>
   </body>
   <script type="text/javascript" src="index.js"></script>
 </html>
